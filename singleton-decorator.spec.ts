@@ -1,4 +1,4 @@
-import { singleton, Singleton, SINGLETON_KEY } from './index'
+import { singleton, Singleton, SINGLETON_KEY } from './singleton-decorator'
 
 describe('singleton', () => {
   test('makes class a singleton', () => {
