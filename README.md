@@ -1,6 +1,6 @@
 # Singleton
 
-Singleton decorator. No constructor monkeypatching. Built with TypeScript.
+Singleton decorator. No constructor monkey patching. Built with TypeScript. With **Angular DI compatibility**.
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
