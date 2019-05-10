@@ -16,13 +16,11 @@ Singleton decorator. No constructor monkeypatching. Built with TypeScript.
 ## Installation
 
 1.  Just copy singleton-decorator.ts into your project.
-2.  Add `import 'reflect-metadata'";` to your polyfill.ts
+2.  Add `import 'reflect-metadata';` to your polyfill.ts
 
 ## Quick start
 
 ```ts
-import { singleton } from '@keenondrums/singleton'
-
 @Singleton
 class Test {}
 
@@ -36,8 +34,6 @@ export class SomeService {}
 ## Usage without decorators
 
 ```ts
-import { singleton } from '@keenondrums/singleton'
-
 class Test {}
 const TestSingleton = Singleton(Test)
 
@@ -49,8 +45,6 @@ new TestSingleton() === new TestSingleton() // returns `true`
 Any child of your singleton will not be a singleton.
 
 ```ts
-import { singleton } from '@keenondrums/singleton'
-
 @Singleton
 class Parent {}
 
@@ -72,8 +66,6 @@ new ChildSingleton() === new ChildSingleton() // returns `true`
 Your singleton instance is always available as a static property of a class by key `SINGLETON_KEY`.
 
 ```ts
-import { singleton, SINGLETON_KEY } from '@keenondrums/singleton'
-
 @Singleton
 class Test {}
 
